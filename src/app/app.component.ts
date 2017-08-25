@@ -42,8 +42,10 @@ export class AppComponent {
             return;
         this.items.push(new Item(text, price));
     }
+<<<<<<< HEAD
 
     // increase() : void {
     //   this.age++;
     // }
+=======
 }
