@@ -6,19 +6,22 @@ export class Item{
     price: number;
      
     constructor(purchase: string, price: number) {
-  
         this.purchase = purchase;
         this.price = price;
         this.done = false;
     }
 } 
 
+//чтобы определить AppComponent как компонент, необходимо прямо 
+//перед его описанием ->
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 
+//Чтобы класс мог использоваться в других модулях, 
+//он определяется с ключевым словом export.
 export class AppComponent { 
     items: Item[] = 
     [
@@ -27,6 +30,7 @@ export class AppComponent {
         { purchase: "Картофель", done: true, price: 22.6 },
         { purchase: "Сыр", done: false, price:310 }
     ];
+
     addItem(text: string, price: number): void {
          
         if(text==null || text==undefined || text.trim()=="")
