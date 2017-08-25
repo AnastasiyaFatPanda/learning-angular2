@@ -1,4 +1,4 @@
-<div class="page-header">
+<!--<div class="page-header">
     <!--Мы можем привязать значение к свойству элемента html.
     Двухстороняяя приязка <input [(ngModel)]="name" placeholder="name"> 
     <br>
@@ -15,9 +15,16 @@
     <button >Old women</button>
  <br> <br> <br>
  -->
+<h2>Количество кликов: {{clicks}}</h2>
 
-    <child>Loading...</child>
+<child (onChanged)="onChanged($event)"></child>
+<br>
+------------------------------
+<child>Loading...</child>
+<br> <br> <br>
 
+<input type="text" [(ngModel)]="name">
+<!--
     <h1> Список покупок </h1>
         
     </div>
@@ -56,3 +63,4 @@
             </tbody>
         </table>
     </div>
+     -->
