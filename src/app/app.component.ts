@@ -23,6 +23,9 @@ export class Item{
 //Чтобы класс мог использоваться в других модулях, 
 //он определяется с ключевым словом export.
 export class AppComponent { 
+   // name = 'Anastasiya';
+   // age = 22;
+
     items: Item[] = 
     [
         { purchase: "Хлеб", done: false, price: 15.9 },
@@ -39,4 +42,8 @@ export class AppComponent {
             return;
         this.items.push(new Item(text, price));
     }
+
+    // increase() : void {
+    //   this.age++;
+    // }
 }
