@@ -5,7 +5,9 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
     templateUrl: "./child.component.html"
 })
 export class ChildComponent {
-    //example fir @Input
+    //Ключевым моментом здесь является определение входных свойств с помощью 
+    //декоратора @Input().Ключевой особенностью таких входных свойств является 
+    //то, что они могут устанавливаться извне, например, из главного компонента.
     @Input() name: string;
     @Input() age: number;
 

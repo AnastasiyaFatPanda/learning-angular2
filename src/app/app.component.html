@@ -15,7 +15,11 @@
     <button >Old women</button>
  <br> <br> <br>
  -->
-<h2>Количество кликов: {{clicks}}</h2>
+
+<child [name] = "name" [age] = "age"></child>
+<input type="text" [(ngModel)] = "name"/>
+
+<!--<h2>Количество кликов: {{clicks}}</h2>
 
 <child (onChanged)="onChanged($event)"></child>
 <br>
@@ -23,7 +27,9 @@
 <child>Loading...</child>
 <br> <br> <br>
 
-<input type="text" [(ngModel)]="name">
+<input type="text" [(ngModel)]="name">-->
+
+
 <!--
     <h1> Список покупок </h1>
         
