@@ -3,7 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 //модуль, необходимый для работы с формами html и, в частности, с элементами input.
 import { FormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
-//import { ChildComponent } from "./child.component";
+import { ChildComponent } from "./child.component";
 
 @NgModule({
     // другие модули, классы которых необходимы для шаблонов компонентов
@@ -12,7 +12,7 @@ import { AppComponent } from "./app.component";
     // классы представлений (view classes), которые принадлежат модулю.
     //Angular имеет три типа классов представлений: компоненты (components),
     //директивы (directives), каналы (pipes)
-    declarations: [AppComponent],//, ChildComponent],
+    declarations: [AppComponent, ChildComponent],
     //корневой компонент, который вызывается по умолчанию при загрузке приложения
     //Если мы опустим компонент: bootstrap: [ ] или вовсе уберем параметр
     //bootstrap, то на веб-страницу не будет загружаться представление

@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component } from "@angular/core";
 
 export class Item {
     purchase: string;
@@ -16,12 +16,12 @@ export class Item {
 //перед его описанием ->
 @Component({
     selector: "app-root",
-    templateUrl: "./app.component.html"//,
-    //styleUrls: ["./app.component.css"]
+    templateUrl: "./app.component.html",
+    styleUrls: ["./app.component.css"]
 })
 
 export class AppComponent {
-    @Input() name: string = "Anastasiya";
+    name: string = "Anastasiya";
     age: number = 22;
 
     items: Item[] = [
